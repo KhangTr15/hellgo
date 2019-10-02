@@ -48,6 +48,8 @@ func main() {
 		greeting = "Ohayo!"
 	case "kr\n":
 		greeting = "Annyeong!"
+	case "ph\n":
+		greeting = "Kamusta"
 	default:
 		greeting = "Yo"
 	}
