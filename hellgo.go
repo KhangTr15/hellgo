@@ -17,6 +17,12 @@ func main() {
 	fmt.Print("Enter Language: ")
 	language, _ := reader.ReadString('\n')
 	fmt.Println(language)
+
+	/*
+		fmt.Println("Enter language code:")
+		fmt.Scanf("%s", &locale)
+	*/
+
 	/*
 		if locale == "en"{
 			greeting = "Hello"
