@@ -1,12 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func main() {
-	var locale, greeting string
-	var languages = [6]string{"en", "es", "de", "fr", "jp", "kr"}
-	locale = languages[5]
+	/* var locale */
+	var greeting string
 
+	/*var languages = [6]string{"en", "es", "de", "fr", "jp", "kr"}
+	locale = languages[4] */
+
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Enter Language: ")
+	language, _ := reader.ReadString('\n')
+	fmt.Println(language)
 	/*
 		if locale == "en"{
 			greeting = "Hello"
@@ -19,18 +29,18 @@ func main() {
 		}
 	*/
 
-	switch locale {
-	case "en":
+	switch language {
+	case "en\n":
 		greeting = "Hello"
-	case "es":
+	case "es\n":
 		greeting = "Hola"
-	case "de":
+	case "de\n":
 		greeting = "Guten Tag"
-	case "fr":
+	case "fr\n":
 		greeting = "Bonjour"
-	case "jp":
+	case "jp\n":
 		greeting = "Ohayo!"
-	case "kr":
+	case "kr\n":
 		greeting = "Annyeong!"
 	default:
 		greeting = "Yo"
