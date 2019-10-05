@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	/* var locale */
+	/* var locale  */
 	var greeting string
 
 	/*var languages = [6]string{"en", "es", "de", "fr", "jp", "kr"}
